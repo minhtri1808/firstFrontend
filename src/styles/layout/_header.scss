@@ -159,3 +159,33 @@
         z-index: 1000;
     }
 }
+
+.header__wrapper {
+    .footer__Isocial {
+        display: none;
+        .footer__social {
+            padding: 25px;
+            margin-left: 10px;
+            img {
+                height: 25px;
+            }
+        }
+        @media (max-width: 768.98px) {
+            display: block;
+            width: 100vw;
+            bottom: 0;
+            left: -2010%;
+            z-index: 999;
+            padding: 0;
+            background: map-get($mau, xanhla);
+            transition: 0.5s;
+        }
+        &.active {
+            @media (max-width: 768.98px) {
+                left: 0%;
+                position: fixed;
+                transition: 0.5s;
+            }
+        }
+    }
+}
