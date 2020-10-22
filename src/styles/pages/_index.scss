@@ -36,9 +36,8 @@
             -ms-flex: 0 0 50%;
             flex: 0 0 50%;
             max-width: 50%;
-            float: left;
-            margin-left: 5%;
             margin-right: 0%;
+            padding: 0 10px;
             .aside__item {
                 -ms-flex: 0 0 100%;
                 flex: 0 0 100%;
@@ -80,7 +79,6 @@
 }
 
 .col-9 {
-    padding-top: 84px;
     margin-left: auto;
 }
 
@@ -254,10 +252,12 @@
     }
 }
 
-// .aside__hotnews {
-//     width: 260px;
-//     height: 1108px;
-// }
+.aside__hotnews {
+    @media (max-width: 575.98px) {
+        display: flex;
+    }
+}
+
 .asideItem__Himages {
     img {
         width: 100%;

@@ -66,17 +66,17 @@
                 position: fixed;
                 height: 100vh;
                 top: 0;
-                left: -100%;
+                left: -1210%;
                 width: 100vw;
                 z-index: 999;
                 padding: 0;
                 background: map-get($mau, xanhla);
-                transition: 1s;
+                transition: 0.5s;
             }
             &.active {
                 @media (max-width: 768.98px) {
                     left: 0%;
-                    transition: 1s;
+                    transition: 0.5s;
                 }
             }
             &::before {
@@ -101,7 +101,6 @@
                     display: block;
                     font-size: 15px;
                     margin: 0;
-                    transition: 1s;
                     margin-left: 30px;
                     color: map-get($mau, main);
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
