@@ -24,6 +24,8 @@ footer {
 }
 
 .footer__info {
+    justify-content: center;
+    align-items: center;
     padding: 31.9px 0 38px 0;
     .address__item {
         color: map-get($mau, xamfooter);
@@ -33,4 +35,19 @@ footer {
             margin-bottom: 0;
         }
     }
+}
+
+.footerI__wrapper {
+    margin-top: 84px;
+    .address__item {
+        input {
+            border: 0;
+        }
+    }
+}
+
+.footer__Iitem {
+    color: map-get($mau, xamfooter);
+    font-size: 16px;
+    margin-bottom: 32px;
 }
