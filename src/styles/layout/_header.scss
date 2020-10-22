@@ -23,9 +23,25 @@
                 }
             }
             .header__search {
+                position: relative;
                 padding: 0 24.5px;
                 input {
-                    border: none;
+                    background-color: transparent;
+                    border: 0.5px solid rgba(255, 255, 255, 0.452);
+                    border-radius: 20px;
+                    margin-bottom: 6.5px;
+                }
+                .search__icon {
+                    width: 20px;
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    right: 30px;
+                    cursor: pointer;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
                 }
             }
         }
