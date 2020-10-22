@@ -2,6 +2,32 @@ footer {
     margin-top: 98px;
 }
 
+.row__footer {
+    @media (max-width: 575.98px) {
+        padding: 10px;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        .col-2 {
+            order: 1;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .col-3 {
+            order: 2;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+            &:last-child {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
 .footer__wrapper {
     background-color: map-get($mau, xanhdam);
 }
@@ -39,6 +65,9 @@ footer {
 
 .footerI__wrapper {
     margin-top: 84px;
+    @media (max-width: 575.98px) {
+        margin-top: 0;
+    }
     .address__item {
         position: relative;
         .address__Iinput {

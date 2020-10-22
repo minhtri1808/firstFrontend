@@ -11,6 +11,11 @@
         border-left: 0px solid transparent;
         border-right: 477px solid transparent;
         border-top: 288px solid map-get($mau, main);
+        @media (max-width: 1024px) {
+            border-left: 0px solid transparent;
+            border-right: 300px solid transparent;
+            border-top: 200px solid map-get($mau, main);
+        }
     }
     img {
         width: 100%;
