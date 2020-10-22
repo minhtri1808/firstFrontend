@@ -1,3 +1,15 @@
+#go-top {
+    position: absolute;
+    top: 700px;
+    position: fixed;
+    right: 53.3px;
+    cursor: pointer;
+    img {
+        width: 52.65px;
+        height: 52.65px;
+    }
+}
+
 .col-9 {
     padding-top: 84px;
     margin-left: auto;
