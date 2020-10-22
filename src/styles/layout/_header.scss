@@ -8,6 +8,9 @@
 .container-fluid {
     .header__wrapper {
         height: 1080px;
+        @media (max-width: 768.98px) {
+            height: 80px;
+        }
         .header__top {
             display: flex;
             padding-top: 25px;
@@ -58,15 +61,23 @@
         .header__bottom {
             display: flex;
             justify-content: flex-end;
-            @media (max-width: 375.98px) {
+            @media (max-width: 768.98px) {
                 display: block;
                 position: fixed;
                 height: 100vh;
                 top: 0;
+                left: -100%;
                 width: 100vw;
                 z-index: 999;
                 padding: 0;
                 background: map-get($mau, xanhla);
+                transition: 1s;
+            }
+            &.active {
+                @media (max-width: 768.98px) {
+                    left: 0%;
+                    transition: 1s;
+                }
             }
             &::before {
                 content: "";
@@ -86,12 +97,13 @@
                     font-size: 12px;
                     padding-right: 10px;
                 }
-                @media (max-width: 375.98px) {
+                @media (max-width: 768.98px) {
                     display: block;
-                    font-size: 22px;
+                    font-size: 15px;
                     margin: 0;
+                    transition: 1s;
                     margin-left: 30px;
-                    color: #000;
+                    color: map-get($mau, main);
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 }
                 &:last-child {
@@ -108,10 +120,10 @@
                     width: 80px;
                     left: 50px;
                 }
-                @media (max-width: 375px) {
-                    width: 40px;
+                @media (max-width: 768.98px) {
+                    width: 80px;
+                    display: block;
                     left: 50px;
-                    top: -100px;
                 }
             }
         }
@@ -126,5 +138,25 @@
                 color: map-get($mau, main);
             }
         }
+    }
+}
+
+#menuRes {
+    display: none;
+    @media (max-width: 768.98px) {
+        display: block;
+        color: map-get($mau, main);
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background: map-get($mau, xanhla);
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 1000;
     }
 }
