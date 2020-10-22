@@ -99,7 +99,7 @@
                 }
                 @media (max-width: 768.98px) {
                     display: block;
-                    font-size: 15px;
+                    font-size: 22px;
                     margin: 0;
                     margin-left: 30px;
                     color: map-get($mau, main);
@@ -162,7 +162,6 @@
 
 .header__wrapper {
     .footer__Isocial {
-        display: none;
         .footer__social {
             padding: 25px;
             margin-left: 10px;
@@ -171,21 +170,26 @@
             }
         }
         @media (max-width: 768.98px) {
-            display: block;
             width: 100vw;
             bottom: 0;
-            left: -2010%;
+            position: fixed;
+            left: -1000%;
             z-index: 999;
+            margin-left: 25px;
+            margin-bottom: 10px;
             padding: 0;
             background: map-get($mau, xanhla);
             transition: 0.5s;
         }
+        @media (max-width: 1024px) {
+            position: fixed;
+            left: -1000%;
+        }
         &.active {
-            @media (max-width: 768.98px) {
-                left: 0%;
-                position: fixed;
-                transition: 0.5s;
-            }
+            left: 0%;
+            display: block;
+            position: fixed;
+            transition: 1s;
         }
     }
 }

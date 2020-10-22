@@ -3,7 +3,7 @@ footer {
 }
 
 .row__footer {
-    @media (max-width: 575.98px) {
+    @media (max-width: 768.98px) {
         padding: 10px;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -65,7 +65,7 @@ footer {
 
 .footerI__wrapper {
     margin-top: 84px;
-    @media (max-width: 575.98px) {
+    @media (max-width: 768.98px) {
         margin-top: 0;
     }
     .address__item {
