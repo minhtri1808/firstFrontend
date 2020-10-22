@@ -1,0 +1,82 @@
+.container-fluid {
+    .header__wrapper {
+        height: 1080px;
+        .header__top {
+            display: flex;
+            padding-top: 25px;
+            justify-content: flex-end;
+            .header__T-item {
+                position: relative;
+                font-size: 14px;
+                padding: 0 24.5px;
+                padding-bottom: 11.5px;
+                color: map-get($mau, main);
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 1px;
+                    height: 19px;
+                    right: 0;
+                    top: 0;
+                    background-color: map-get($mau, main);
+                }
+            }
+            .header__search {
+                padding: 0 24.5px;
+                input {
+                    border: none;
+                }
+            }
+        }
+        .header__bottom {
+            display: flex;
+            justify-content: flex-end;
+            &::before {
+                content: "";
+                position: absolute;
+                height: 0.5px;
+                width: 100%;
+                background-color: map-get($mau, main);
+            }
+            .header__B-item {
+                color: map-get($mau, main);
+                padding-right: 80px;
+                padding-top: 19.5px;
+                font-size: 16px;
+                position: relative;
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+        .header__logo {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                top: -100px;
+                left: -10px;
+                z-index: -1;
+                border-left: 0px solid transparent;
+                border-right: 477px solid transparent;
+                border-top: 288px solid map-get($mau, main);
+            }
+            img {
+                position: relative;
+                top: -60px;
+                left: 90px;
+            }
+        }
+        .header__shareholder {
+            position: absolute;
+            top: 973px;
+            left: 140px;
+            h4 {
+                color: map-get($mau, main);
+            }
+            h1 {
+                color: map-get($mau, main);
+            }
+        }
+    }
+}

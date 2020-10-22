@@ -1,0 +1,45 @@
+.col-10 {
+    padding-top: 84px;
+    .list__item {
+        float: left;
+        width: 48%;
+        margin-bottom: 41px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 282px;
+        }
+        .text__posion {
+            position: absolute;
+            left: 9px;
+            top: 250px;
+            z-index: 1;
+            color: map-get($mau, main);
+            font-size: 18px;
+            font-weight: bold;
+            .bg {
+                height: 33.5px;
+                width: 506px;
+                left: -10px;
+                position: relative;
+                background-color: #00000052;
+            }
+        }
+        .list__Idate {
+            p {
+                color: map-get($mau, xanhla);
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        }
+        .list_Itext {
+            p {
+                font-size: 18px;
+                color: map-get($mau, text);
+            }
+        }
+    }
+    .mr {
+        margin-right: 2%;
+    }
+}
